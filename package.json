@@ -1,0 +1,36 @@
+{
+  "name": "moduscreate-api",
+  "version": "1.0.0",
+  "description": "ModusCreate - NHTSA NCAP 5 Star Safety Ratings API",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js",
+    "test": "mocha api.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javm/moduscreate-api.git"
+  },
+  "keywords": [
+    "REST"
+  ],
+  "author": "Jose A. Villarreal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javm/moduscreate-api/issues"
+  },
+  "homepage": "https://github.com/javm/moduscreate-api#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "nconf": "^0.8.4",
+    "node-rest-client": "^3.0.7"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0",
+    "superagent": "^3.5.2"
+  }
+}
