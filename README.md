@@ -3,7 +3,7 @@ moduscreate-api
 
 SUMMARY
 ========
-Jose A. Villarreal (c) 2014.
+Jose A. Villarreal (c) 2017.
 
 Dependencies
 ============
