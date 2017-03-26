@@ -48,12 +48,12 @@ app.get('/vehicles/:year/:manufacturer/:model', (req, res, next) =>{
   let manufacturer = req.params.manufacturer;
   let model = req.params.model;
 
+  console.log(req.query);
   if(req.query.withRating){
     if(req.query.withRating === 'true'){
        vehiclesResponseWithRating(year, manufacturer, model, res);
     }else{
-      console.log("Bad data");
-      res.json({Count: 0, Results: []});
+      vehiclesResponse(year, manufacturer, model, res);
     }
   }else{
     vehiclesResponse(year, manufacturer, model, res);
@@ -62,6 +62,7 @@ app.get('/vehicles/:year/:manufacturer/:model', (req, res, next) =>{
 
 app.post('/vehicles', (req, res, next) => {
   console.log('POST /vehicles/');
+  console.log(req.body);
   let year = req.body.modelYear;
   let manufacturer = req.body.manufacturer;
   let model = req.body.model;

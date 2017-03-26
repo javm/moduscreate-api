@@ -18,7 +18,12 @@ function pickData(data, response){
 }
 
 function getVehicles(year, manufacturer, model, cb){
+  if(!year || (year && isNaN(year))){
+   console.log("Bad year data "+year);
+   return cb({Count: 0, Results: []});
+ }
   let url = `${config.get('nhtsa').url}/modelyear/${year}/make/${manufacturer}/model/${model}?format=json`;
+  console.log(url);
   client.get(url, function(data, response){
     let output = pickData(data, response);
     cb(output);

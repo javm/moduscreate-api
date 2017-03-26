@@ -17,4 +17,6 @@ npm install && npm start
 
 Test
 ====
-npm test
+1. Start the server in one terminal
+`npm start`
+2. Run `npm test` in another terminal
