@@ -7,8 +7,8 @@ Jose A. Villarreal (c) 2017.
 
 Dependencies
 ============
-- Express
-- Node.js
+- Express ^4.15.2
+- Node.js v6.3.0
 See package.js
 
 Istall
